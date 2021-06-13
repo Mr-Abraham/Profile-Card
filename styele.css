@@ -125,4 +125,9 @@ left: 0px;
 .container{
     margin: 0 3.5em;
 }
+    .section h2{
+font-size: .8rem;
 }
+    .section p{
+    font-size:.59rem
+    }
