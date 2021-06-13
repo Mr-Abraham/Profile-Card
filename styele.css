@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(185, 75%, 39%);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    border-radius: 15px;
+    background: #fff;
+}
+.container-image img{
+    border-radius: 10px 10px 0 0 ;
+    height: 100%;
+}
+.victor-image{
+    border: 2px solid #fff;
+    position: relative;
+    margin-top:-60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+.content{
+    background: #fff;
+    height: 100%;
+    padding: 1em;
+    border-radius: 0 0 15px 15px;
+}
+.location{
+    padding: .2em;
+    text-align: center;
+    line-height: 1.5;
+    border-bottom: 1px solid rgb(235, 231, 231);
+}
+.location h1{
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+#age{
+    color:hsl(0, 0%, 59%);
+}
+.location p{
+    color:hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+.info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: .5em;
+}
+.section{
+    padding: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5;
+}
+.section p{
+    font-weight: 400;
+    font-size: .69em;
+    color: hsl(0, 0%, 59%);
+
+}
+.section h2{
+color: hsl(229, 23%, 23%)
+;
+}
+.top,
+.bottom{
+    width: 50vw;
+    position: absolute;
+    overflow: hidden;
+    z-index: -999;
+    padding: 1em;
+    height: 100vh;
+}
+.top{
+top: 0;
+left: 0px;
+}
+.bottom{
+    bottom: 0;
+    right: 10px;
+}
+.top img{
+    transform: translate(-10%, -40%);
+}
+.bottom img{
+    transform: translate( 10%, 55%);
+}
+
+@media (max-width:600px){
+    .bottom{
+        padding: 0;
+    }
+    .top img{
+        height: 50vh;
+        position: absolute;
+    }
+    .bottom img{
+        height: 100vh;
+        position: absolute;
+       right: -30px;
+       bottom: 100px;
+    }
+}
+
+@media (max-width:380px){
+.container{
+    margin: 0 3.5em;
+}
+}
